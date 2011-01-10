@@ -9,6 +9,7 @@ used the favicon from the official website of whatever that tag is about.
 
 Well, then you can add it. You don't even need to know any JavaScript. Just add
 a line to the part at the top where it says `var icons = {`. Follow the example of
-all the tags that are already there. If the tag has hyphens in it, you'll need to put it in quotes.
+all the tags that are already there. If the tag has hyphens in it, you'll need to
+put it in quotes. For the URL, use a 16x16 image. Typically, the "favicon" from a website works well.
 
 Enjoy!
