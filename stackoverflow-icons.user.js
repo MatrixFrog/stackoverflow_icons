@@ -26,7 +26,8 @@ $(function() {
     var $this = $(this);
     var iconURL = icons[$this.text()];
     if (iconURL) {
-      $this.prepend('<img src="' + iconURL + '" class="sponsor-tag-img" />');
+      var icon = $('<img src="' + iconURL + '" class="sponsor-tag-img" />').width(16).height(16);
+      $this.prepend(icon);
     }
   });
 });
