@@ -38,13 +38,21 @@ var icons = {
   xul : 'http://www.mozilla.org/favicon.ico'
 };
 
-$(function() {
-  $('.post-tag').each(function() {
-    var $this = $(this);
-    var iconURL = icons[$this.text()];
-    if (iconURL) {
-      var icon = $('<img src="' + iconURL + '" class="sponsor-tag-img" />').width(16).height(16);
-      $this.prepend(icon);
-    }
+function GM_wait() {
+  if (typeof unsafeWindow.jQuery === 'undefined') { window.setTimeout(GM_wait,50); }
+  else { $ = unsafeWindow.jQuery; GM_letsJQuery(); }
+}
+GM_wait();
+
+function GM_letsJQuery() {
+  $(function() {
+    $('.post-tag').each(function() {
+      var $this = $(this);
+      var iconURL = icons[$this.text()];
+      if (iconURL) {
+        var icon = $('<img src="' + iconURL + '" class="sponsor-tag-img" />').width(16).height(16);
+        $this.prepend(icon);
+      }
+    });
   });
-});
+}
