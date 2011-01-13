@@ -1,4 +1,4 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name          StackOverflow Tag Icons
 // @description   Adds icons to non-sponsored tags
 // @include       http://stackoverflow.com/*
@@ -21,6 +21,7 @@ var icons = {
   java : 'http://java.sun.com/favicon.ico', 
   jquery : 'http://static.jquery.com/favicon.ico',
   json : 'http://www.json.org/favicon.ico',
+  linux : 'http://kernel.org/favicon.ico',
   mercurial : 'http://mercurial.selenic.com/favicon.ico',
   mysql : 'http://www.mysql.com/favicon.ico',
   osx : 'http://images.apple.com/macosx/what-is-macosx/images/subnav_overview20090824.png',
