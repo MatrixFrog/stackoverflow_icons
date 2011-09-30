@@ -39,7 +39,8 @@ var icons = {
   tortoisesvn : 'http://tortoisesvn.tigris.org/favicon.ico',
   twitter : 'http://twitter.com/favicon.ico',
   windows : 'http://www.microsoft.com/windows/Framework/images/favicon.ico',
-  xul : 'http://www.mozilla.org/favicon.ico'
+  xul : 'http://www.mozilla.org/favicon.ico',
+  yesod : 'http://www.yesodweb.com/favicon.ico'
 };
 
 function GM_wait() {
